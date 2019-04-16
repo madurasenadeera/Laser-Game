@@ -6,6 +6,11 @@
 // laser activation time. This code looks after Hardware Setup 2         %
 // % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Allocating Component Configuration                                  %
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 const int ledPin = 13;
 
 const int ldrPin = A0;
@@ -13,7 +18,7 @@ const int ldrPin = A0;
 const int laserPin = 4;
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Initialiser                                                         %
+// Initialising Components                                             %
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 void setup () {
@@ -30,7 +35,7 @@ digitalWrite( laserPin , HIGH);
 }
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Initialiser                                                         %
+// Looping Code for the detection of the laser                         %
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 void loop() {
@@ -43,26 +48,17 @@ digitalWrite(ledPin, HIGH);
 
 digitalWrite( laserPin , HIGH);
 
-Serial.println(" ALARM ACTIVATED ");
-
 }
-
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Initialiser                                                         %
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 else {
 
-digitalWrite(ledPin, HIGH);
+digitalWrite(ledPin, LOW);
 
 digitalWrite( laserPin , HIGH);
 
-Serial.println("ALARM DEACTIVATED");
-
 }
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Initialiser                                                         %
+// Serial output of whether laser is detected                          %
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Serial.println( ldrStatus );
