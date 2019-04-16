@@ -1,9 +1,9 @@
 # Project I - Laser Game
 
 Repository for the software behind the Laser Game used between Room 1 and 2 of the escape room. Puzzle divided into 4 different Hardware Setups: 
-Hardware Setup #1 - Laser Source #1
-Hardware Setup #2 - Sensor Point #1 & Laser Source #2
-Hardware Setup #3 - Sensor Point #2 & RF24 (Transmitter)
+Hardware Setup #1 - Laser Source 1,
+Hardware Setup #2 - Sensor Point 1 & Laser Source 2,
+Hardware Setup #3 - Sensor Point 2 & RF24 (Transmitter),
 Hardware Setup #4 - RF24 (Receiver) & Solenoid
 
 
