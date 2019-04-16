@@ -2,8 +2,9 @@
 // Title: Project I - Laser Game - Hardware Setup #2                     %
 // Author: Madura Senadeera                                              %                                        
 // Last Update: 15/04/2019                                               %
-// Description: Arduino code controlling the laser game by initialising  %
-// laser activation time. This code looks after Hardware Setup 2         %
+// Description: Arduino code controlling the laser game by sensing the . %
+// incoming laser from Hardware Setup #1. This code looks after Hardware %
+// Setup #2 activating laser 2 once laser 1 has been detected.           %
 // % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 
