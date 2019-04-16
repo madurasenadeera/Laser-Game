@@ -1,5 +1,8 @@
 # Project I - Laser Game
 
+![Diagram - Laser Game](https://user-images.githubusercontent.com/28048266/56204424-fe950880-6079-11e9-9c06-cde757a704c3.jpg)
+
+
 Repository for the software behind the Laser Game used between Room 1 and 2 of the escape room. Puzzle divided into 4 different Hardware Setups: 
 Hardware Setup #1 - Laser Source 1,
 Hardware Setup #2 - Sensor Point 1 & Laser Source 2,
