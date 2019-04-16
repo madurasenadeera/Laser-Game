@@ -53,7 +53,7 @@ else {
 
 digitalWrite(ledPin, LOW);
 
-digitalWrite( laserPin , HIGH);
+digitalWrite( laserPin , LOW);
 
 }
 
